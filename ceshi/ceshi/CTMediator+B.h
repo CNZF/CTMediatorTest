@@ -12,7 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CTMediator (B)
 
-- (UIViewController *)personInfoWithName:(NSString *)name detailName:(NSString *)detailName;
+- (UIViewController *)personInfoWithName:(NSString *)name detailName:(NSString *)detailName CompleteBlock:(void (^)(NSDictionary * _Nonnull result))completeBlock;
+
 
 @end
 

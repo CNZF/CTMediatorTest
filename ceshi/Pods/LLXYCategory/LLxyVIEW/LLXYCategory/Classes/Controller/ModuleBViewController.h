@@ -10,7 +10,12 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^B_Block)(NSDictionary * result);
+
 @interface ModuleBViewController : UIViewController
+
+@property (nonatomic, copy)B_Block b_block;
+//- (NSString *)success;
 
 @end
 
