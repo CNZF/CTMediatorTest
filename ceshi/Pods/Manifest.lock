@@ -1,0 +1,20 @@
+PODS:
+  - CTMediator (25)
+  - LLXYCategory (1.0.3)
+
+DEPENDENCIES:
+  - CTMediator
+  - LLXYCategory
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CTMediator
+    - LLXYCategory
+
+SPEC CHECKSUMS:
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
+  LLXYCategory: da106e803c1f943d7382f188e025aa6acd9ed5c0
+
+PODFILE CHECKSUM: 5a83d43b685d7e221bfade7a02866bfc4cc12d77
+
+COCOAPODS: 1.7.0.beta.1
