@@ -29,7 +29,9 @@
 }
 
 - (IBAction)pressMainBtn:(id)sender {
-    UIViewController *con = [[CTMediator sharedInstance] personInfoWithName:@"中车互联" detailName:@"真垃圾"];
+    UIViewController *con = [[CTMediator sharedInstance] personInfoWithName:@"中某互联" detailName:@"RTMMMP" CompleteBlock:^(NSDictionary * _Nonnull result) {
+        NSLog(@"回调结果：%@",result[@"laji"]);
+    }];
     
     [self presentViewController:con animated:YES completion:nil];
     

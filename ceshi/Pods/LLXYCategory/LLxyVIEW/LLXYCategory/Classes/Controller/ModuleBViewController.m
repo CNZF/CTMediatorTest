@@ -8,8 +8,10 @@
 
 #import "ModuleBViewController.h"
 #import "ModuleA.h"
-@interface ModuleBViewController ()
+#import <CTMediator/CTMediator.h>
 
+@interface ModuleBViewController ()
+@property (nonatomic, copy)NSString * result;
 @end
 
 @implementation ModuleBViewController
@@ -27,13 +29,22 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     if (@available(iOS 5.0, *)) {
+        self.result = @"是真的垃圾";
         [self dismissViewControllerAnimated:YES completion:nil];
+        NSDictionary * dic = [[NSDictionary alloc] initWithObjectsAndKeys:self.result,@"laji", nil];
+        self.b_block(dic);
     } else {
         // Fallback on earlier versions
     }
     
     
 }
+
+- (NSString *)success
+{
+    return self.result;
+}
+
 /*
 #pragma mark - Navigation
 
